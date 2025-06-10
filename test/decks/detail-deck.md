@@ -1,33 +1,118 @@
 ---
-title: Details
+title: Collapsible detail sections
+subtitle: ways to create collapsible detail sections using headers and div blocks, including pop-up and custom summary styles
 ---
 
-# Header 2 Block Detail
+# Clickable header 
 
-## There is no good summary {.details}
+This turns a header into a clickable summary.
 
--   Some more detail
--   Or other
+When clicked, it reveals the content that follows (like a bullet list):
 
-## Pop-ups are good {.details .popup width="30%"}
+<br><br>
 
-![](./assets/picard-facepalm.jpeg){width="30%"}
+## sample : 
+## header clickable summary {.details}
+
+-   this is more detaile 1 
+-   this is more detaile 2
+
+
+# Clickable header source code : 
+
+```` markdown 
+## sample : 
+## header clickable summary {.details}
+
+-   this is more detaile 1 
+-   this is more detaile 2
+````
+
+# popup-style detail box 
+
+This creates a popup-style detail box (like a modal or side-float),could containing an image:
+
+<br><br>
+
+## Sample :
+
+<br><br>
+
+## This is Pop-ups sample {.details .popup width="90%"}
+
+![](include/06-metal.png){width="90%"}
+
+# popup-style detail box source code : 
+
+```` markdown 
+## Sample :
+
+## This is Pop-ups sample {.details .popup width="90%"}
+
+![](include/06-metal.png){width="90%"}
+````
+
 
 # Div Block Detail
 
-::: {.details summary="Div detail summmary."}
--   Some more detail
--   Or other
-:::
+This shows how to create a detail block using a div container : 
 
-# Header 2+Div Block Detail
+## Sample :
 
-## Header 2 summmary. {.details}
-
--   Some more detail
--   Or other
+<br><br>
 
 ::: {.details summary="Div detail summmary."}
--   Some more detail
--   Or other
+-   detail number one 
+-   detail number two
 :::
+
+# Div Block Detail source code : 
+
+```` markdown
+## Sample :
+
+::: {.details summary="Div detail summmary."}
+-   detail number one 
+-   detail number two
+:::
+````
+
+# Mixed header and div block
+
+This mixes a header collapsible and a div-based collapsible on the same slide. So you'll have:
+
+- A clickable header to reveal a list.
+
+- A collapsible div inside the same slide.
+
+<br>
+
+## Sample : 
+
+<br>
+
+## header clickable summary {.details}
+
+-   this is more detaile 1 
+-   this is more detaile 2
+
+::: {.details summary="Div detail summmary."}
+-   detail number one 
+-   detail number two
+:::
+
+# Mixed header and div block source code : 
+
+```` markdown
+## Sample :
+
+## header clickable summary {.details}
+
+-   this is more detaile 1 
+-   this is more detaile 2
+
+::: {.details summary="Div detail summmary."}
+-   detail number one 
+-   detail number two
+:::
+````

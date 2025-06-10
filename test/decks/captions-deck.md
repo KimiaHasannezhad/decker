@@ -1,13 +1,20 @@
 ---
-title: Live Captioning Test Deck
-
+title: Live Captioning
+subtitle: real-time live captions of the speech during a presentation
 live-captions: true
-
 caption-server: https://decker.cs.tu-dortmund.de/captions
 speech-recognition-language: de-DE
 ---
 
-# How-to
+# What is Live captioning 
+<br><br>
+
+- Enable real-time live captions of their speech during a presentation.
+- Broadcast those captions to the audience, either projected or sent to their devices via a QR code.
+- Configure the system with specific language settings and a caption server.
+<br><br>   
+
+**How we can enable it ?**
 
 - Start presenter mode by pressing **P** three times in quick succession.
 - A []{.fas .fa-closed-captioning} Button should be visible in the top right.
@@ -19,15 +26,18 @@ speech-recognition-language: de-DE
 
 # Deck Configuration
 
-```
+You should add this configs into Deck at the start of your markdown file 
+
+Source code :
+```Markdown
 live-captions: true
 caption-server: https://decker.cs.tu-dortmund.de/captions
 speech-recognition-language: de-DE
 ```
 
-- `live-captions: true` : Enable the feature in the default template.
-- `caption-server` : An address to a running live-captioning sync service.
-- `speech-recognition-language` : If not supplied, the WebSpeechAPI uses your browser's default language. If supplied it takes a BCP 47 language tag.
+- **`live-captions: true`** : Enable the feature in the default template.
+- **`caption-server`** : An address to a running live-captioning sync service.
+- **`speech-recognition-language`** : If not supplied, the WebSpeechAPI uses your browser's default language. If supplied it takes a BCP 47 language tag.
 
 # Language Tag Parsing
 

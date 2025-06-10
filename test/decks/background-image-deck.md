@@ -1,5 +1,6 @@
 ---
 title: Background Images
+subtitle: different ways to include background images
 controls: false
 ---
 

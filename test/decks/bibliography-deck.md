@@ -1,50 +1,83 @@
 ---
+title: Citation and Footnote
+subtitle: refrence by using footnotes and citations
 bibliography: bibliography.bib
 csl: acm-sig-proceedings.csl
-title: Citation and Footnotes
 ---
 
-# Testing Footnotes {.mid .columns}
+# What is Footnote and Citation
+<br><br><br>
 
-##  {.left}
+**Footnote** : 
 
-## Human Sense of Vision: Variance {.right}
+  - gives extra information or clarification without crowding the main text
+  - on will appear at the bottom of the slide or page and refrence to your text by using numbers
+<br><br><br>
 
-## Is the dress on the left {.question .fragment}
+**Citation** : 
 
-1.  blue & black or
-2.  white & gold?
+  - points to a source (e.g., book, article, paper) to credit authors or support claims
+  - Your code uses `[@tramberend2003]` which refers to an entry in a .bib (BibTeX) bibliography file
+  - A bibliography section is added at the end of slides showing full citation details
+  - You should add   `#Bibliography`  at the end of your markdown file to see all citations you called among contents at the end
 
-## Vote by 3.5 mio. users {.fragment .align-center}
+# Footnotes sample
 
-![](assets/title-logo-hci.png){width="30%"}
+HCI focuses on designing systems that are easy and efficient for people to use[^1].
 
-# Human Sense of Vision: Photoreceptors {.mid layout="columns"}
+One key goal is to reduce user errors and improve satisfaction[^2].
 
-##  {.left}
+- **Affordance**: Hints at how an object should be used[^3].
 
-![](include/06-metal.png)
+[^1]: It combines psychology, design, and computer science.
+[^2]: Usability testing helps evaluate this.
+[^3]: A door handle suggests pulling; a flat plate suggests pushing.
 
-## Rods {.right}
 
--   Number: $\approx$ 120 mil[^1]
--   Location: predominantly at the rim of the retina
--   Very[^2] photosensitive
--   Important for mesopic vision (i.e., to see even dim light)
+# Footnotes sample
 
-[^1]: There are sources with significantly different numbers, e.g., 90 mio. for
-    rods and 4,8 mio for cones.
+Source code :
+```` markdown
+HCI focuses on designing systems that are easy and efficient for people to use[^1].
 
-[^2]: Sneaky footnote.
+One key goal is to reduce user errors and improve satisfaction[^2].
 
-# Citation {.someclass}
+- **Affordance**: Hints at how an object should be used[^3].
+
+[^1]: It combines psychology, design, and computer science.
+[^2]: Usability testing helps evaluate this.
+[^3]: A door handle suggests pulling; a flat plate suggests pushing.
+````
+
+# Citations sample {.someclass}
 
 -   Not quite recently published [@tramberend2003].
 -   The bibliography is appended at the end of the deck.
 -   CSL file *[:meta](csl)* was used.
 
-# Citation in a caption
+
+# Citations sample 
+
+Source code :
+
+```markdown
+# Citations sample {.someclass}
+-   Not quite recently published [@tramberend2003].
+-   The bibliography is appended at the end of the deck.
+-   CSL file *[:meta](csl)* was used.
+```
+
+
+# Citation in a caption sample
 
 ![Not quite recently published [@tramberend2003]](include/06-metal.png)
+
+
+# Citation in a caption sample
+Source code :
+
+```markdown
+![Not quite recently published [@tramberend2003]](include/06-metal.png)
+```
 
 # Bibliography

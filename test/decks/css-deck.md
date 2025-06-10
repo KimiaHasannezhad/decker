@@ -1,87 +1,271 @@
 ---
-subtitle: Test cases
+subtitle: Box colors , highlight code blocks , inverse style , ...
 title: CSS Styling
 ---
 
-# Box colors {layout="columns"}
+# Box colors 
+Each section or element can use style classes:
 
-## Question {.left .primary}
+(- primary
+- secondary
+- success 
+- danger 
+- warning 
+- info)
 
-Questions?
+- question
+- answer
+- observation 
+- definition 
+- alert 
+- example
+- note
 
-## Observation {.secondary}
+# Samples 
 
-That.
+## Question {.question}
 
-## Definition {.success}
+Is this Question?
 
-Definitely!
+## 
+<br><br>
 
-## Alert {.danger}
+## Answer {.answer}
 
-Run!
+I am the answer .
 
-## Answer {.right .warning}
+##
+<br><br>
 
-What?
+## Source code :
+```` markdown
+## Question {.question}
 
-## Example {.info}
+Is this Question?
 
-Like this.
+## Answer {.answer}
 
-## Note {.primary}
+I am the answer .
+````
 
-Invisible.
+# Samples
 
-## Equation {.secondary}
+## Observation {.observation}
+
+This is Observation.
+
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Observation {.observation}
+
+This is Observation.
+````
+
+# Samples
+
+## Definition {.definition}
+
+This is definition.
+
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Definition {.definition}
+
+This is definition.
+````
+
+# Samples
+
+## Alert {.alert}
+
+This is Alert !
+
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Alert {.alert}
+
+This is Alert !
+````
+
+# Samples 
+
+## Example {.example}
+
+This is Example.
+
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Example {.example}
+
+This is Example.
+````
+
+# Samples
+
+## Note {.note}
+
+This is your note.
+
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Note {.note}
+
+This is your note.
+````
+# Samples 
+
+## Equation {.note}
 
 $e=mc^2$
 
+##
+<br><br>
+
+## Source code :
+```` markdown
+## Equation {.note}
+
+$e=mc^2$
+````
 ------------------------------------------------------------------------
 
-# Inverse Colors for Big Dark Images {.inverse}
+# Dark Mode / Inverse Styling
+
+- The **``.inverse``** class applies a dark theme to that slide.
+
+- Background becomes black, text becomes light.
+
+- Good for displaying bright images or highlighting contrast.
+
+
+# Inverse Colors sample {.inverse}
 
 ## Color scheme
 
 -   Background is black
 -   Font color is almost white
 
-## Alert Box {.fragment .danger}
+## Alert Box {.fragment .alert}
 
-Even colored boxes look ok.
+colored boxes also look ok.
+
+# Source code 
+
+```` markdown 
+# Inverse Colors sample {.inverse}
+
+## Color scheme
+
+-   Background is black
+-   Font color is almost white
+
+## Alert Box {.fragment .alert}
+
+colored boxes also look ok.
+````
 
 ------------------------------------------------------------------------
 
-# Code (`Code in Header`)
+#  Code Blocks with Syntax Highlighting
 
-## Code block (`Code in Header`)
+You can embed code blocks and set the language to get proper highlighting:
 
+
+## Code block sample
 ``` {.haskell label="Haskell"}
 ghci> :type [1,2,3,4]
 [1,2,3,4] :: Num a => [a]
 ```
 
-## Verbatim block (`Code in Header`)
+````{.markdown}
+![some text as an ALT](include/06-metal.png)
+````
 
-    ghci> :type [1,2,3,4]
-    [1,2,3,4] :: Num a => [a]
-
-## Text block (`Code in Header`)
-
-``` {.txt}
+## code block source code 
+````markdown 
+## Code block sample
+``` {.haskell label="Haskell"}
 ghci> :type [1,2,3,4]
 [1,2,3,4] :: Num a => [a]
 ```
 
-# Smile
+```markdown
+![some text as an ALT](include/06-metal.png)
+```
+````
 
-``` {.{..markdown}}
+
+# Verbatim and text blocks 
+
+## Verbatim block 
+
+    ghci> :type [1,2,3,4]
+    [1,2,3,4] :: Num a => [a]
+
+## Text block 
+
+```{.txt}
+ghci> :type [1,2,3,4]
+[1,2,3,4] :: Num a => [a]
+```
+
+## Source code : 
+```
+## Verbatim block 
+
+    ghci> :type [1,2,3,4]
+    [1,2,3,4] :: Num a => [a]
+
+## Text block 
+
+```{.txt}
+ghci> :type [1,2,3,4]
+[1,2,3,4] :: Num a => [a] ```
+```
+
+
+# Emojie (Smile)
+
+This shows a big smile emoji rendered as part of the content.
+
+```markdown
 :smile:
 ```
 
+the output : 
+
+:smile:
+
+<br><br>
+you can also have **styled Emojie**.
+
+This shows a big smile emoji rendered as part of the content : 
+```markdown
+[:smile:]{.xx-large}
+```
+
+the output : 
+
 [:smile:]{.xx-large}
 
-## Also see
+<br><br>
+
+## Also see here for more markdown emoji markup
 
 -   [Complete list of github markdown emoji markup ·
     GitHub](https://gist.github.com/rxaviers/7360908)

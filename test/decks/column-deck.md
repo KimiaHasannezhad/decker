@@ -6,16 +6,71 @@ title: Column Layout
 lang: en-EN
 ---
 
+<!-- ::: columns-2-3-2
+
+::: cell
+**Column 1**
+:::
+
+::: cell
+**Column 2**
+:::
+
+::: cell
+**Column 3**
+:::
+
+::: -->
+
+
 # Grid Column Slides
 
 ::: columns-2-3-2
+
 ::: cell
+**Column 1**
+
+Some Text
+:::
+
+::: cell {style="font-weight: bold;" align="center"}
+This is Madness!
+
+::: columns-1-1
+
+::: cell {style="background-color:red;"}
+C1A
+:::
+
+::: cell {style="background-color:green;"}
+C1B
+:::
+
+:::
+:::
+
+::: cell {align="right"}
+**Column 3**
+
+Some Text
+:::
+
+:::
+
+::: {style="transform:scale(0.72);background-color:lightblue;"}
+**Honey, I shrunk the divs!**
+::: 
+
+# Grid Column Slides
+
+::: columns-2-3-2 
+:::  cell
 Column 1
 
 Some Text
 :::
 
-::: {style="font-weight: bold;" align="center"}
+::: {style="font-weight: bold;" align="center" }
 This is Madness!
 
 ::: columns-1-1
@@ -59,6 +114,24 @@ Some Text
 ![](include/06-metal.png)
 
 --------------------------------------------------------------------------------
+
+# Slide Masters {.columns}
+
+## Fixed Layouts {.top}
+
+-   Just like PowerPoint and Keynote (This is the full-width top row)
+
+## Syntax {.left grow="2"}
+
+-   Class and key-value attributes
+-   Assign content to layout area
+-   On elements *Header 2*, *Image*, *Code Block*, *DIV*
+
+## Example {.right}
+
+![](include/06-metal.png)
+
+
 
 # Two columns and a footer {.columns}
 
