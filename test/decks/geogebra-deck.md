@@ -1,15 +1,14 @@
 ---
 title: Geogebra
+subtitle: Render Geogebra Iframe in markdown slides
 ---
 
-# An Geogebra Iframe {.columns}
+# A Geogebra Iframe 
 
-## Markdown {.left}
+![Gradient](gradient.ggb){ width=80% }
+
+# Source code
 
 ```markdown
-![Gradient](gradient.ggb)
+![Gradient](gradient.ggb){ width=80% }
 ```
-
-## Renders as {.right}
-
-![Gradient](gradient.ggb)

@@ -13,6 +13,7 @@ explain:
   recWidth: 1920
   useGreenScreen: true
 title: Explain Things with Video
+subtitle : Enables green screen (chroma key) video recording with customizable background replacement and real-time control.
 ---
 
 # Greenscreen

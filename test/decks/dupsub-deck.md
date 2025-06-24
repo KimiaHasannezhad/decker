@@ -1,23 +1,27 @@
 ---
 title: Duplicate Slides
+subtitle :  duplicate a slide within presentation using ``.dupsub``
 ---
 
-# A Normal slide
+# This is a normal slide
 
-## Almost empty
+## This is a subheading within this slide 
 
-# A Duplicated Slide {.dupsub}
-
-## Just
-
--   Add class `.dupsub` to a slide
+# Source code 
 
 ``` markdown
-# A Duplicated Slide {.dupsub}
+# This is A Normal slide
+
+## This is a subheading within this slide 
 ```
 
--   And see below
+# How to duplicate a slide? {.dupsub}
+## by usign `.dupsub`
+when navigating with the down arrow during the presentation the duplicated slide will be visible.
 
-# Another Normal slide
-
-## Almost empty
+# Source code
+``` markdown
+# How to duplicate a slide? {.dupsub}
+## by usign `.dupsub`
+when navigating with the down arrow during the presentation the duplicated slide will be visible.
+```
