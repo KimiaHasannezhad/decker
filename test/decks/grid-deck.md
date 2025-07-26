@@ -24,7 +24,7 @@ title: Grid Layouts
 
 ## Specification in Yaml
 
--   Layout templates can be specified in the meta data
+-   Layout templates can be specified in meta data
 
 -   Example with 3 layout areas in 3 by 3 grid
 
@@ -37,7 +37,27 @@ title: Grid Layouts
       short: "hhh|bbr|lff"
     ```
 
-------------------------------------------------------------------------
+# Slide with layout {layout="fancy"}
+
+## This is it {.b}
+
+- Some text bbbb
+
+## This is it {.l}
+
+- Some text llll
+
+## This is it {.h}
+
+- Some text hhhh
+
+
+
+## This is also it
+
+- Shows up in the body cell too
+
+-----------------------------------------------------------------------
 
 # Using layout templates
 

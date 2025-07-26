@@ -1,14 +1,12 @@
 ---
 experiments:
   fragment-templates: true
-subtitle: What's it with the templates?
+subtitle: how to enable and use fragment templates to dynamically render Markdown links and code blocks
 title: Fragment Templates
 ---
 
 
 # Fragment Templates
-
-## WAT?
 
 -   *Fragment templates* use the Pandoc template syntax and processor to
     transform Markdown link and code block elements
@@ -17,6 +15,7 @@ title: Fragment Templates
 
 Fragment templates are hidden behind a flag and need to be explicitly enabled
 
+needed configurations : 
 ``` yaml
 experiments:
   fragment-templates: true

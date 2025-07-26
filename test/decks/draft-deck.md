@@ -1,7 +1,6 @@
 ---
-draft: false
-lecture:
-  status: done
+draft: true
+lecture.status: upcoming
 title: Draft Deck
 ---
 
@@ -24,7 +23,7 @@ slide should be missing
 
 # Missing {.solution}
 
-FUCK
+Kimia
 
 # Solution Boxes
 
@@ -41,4 +40,4 @@ should be missing
 
 ## Missing {.solution}
 
-FUCK
+Hnejad
