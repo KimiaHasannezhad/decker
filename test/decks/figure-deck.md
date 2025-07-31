@@ -1,5 +1,6 @@
 ---
 title: Figures for Images
+subtitle: This deck demonstrates how Pandoc handles images as figures and captions
 ---
 
 # Figures for Images {layout="columns"}
@@ -20,7 +21,11 @@ Strangely, this does not work.
 
 Strangely, this does not work.
 
-------------------------------------------------------------------------
+# Source code {.small}
+````markdown
+![This is the alt text of the image](include/06-metal.png)
+````
+--------------------------------------------------------------------------------
 
 # Naked Images
 
@@ -28,17 +33,25 @@ Strangely, this does not work.
 
 ![](include/06-metal.png)
 
-------------------------------------------------------------------------
+# Source code {.small}
+````markdown
+![](include/06-metal.png)
+````
+--------------------------------------------------------------------------------
 
-# Naked Images {.columns}
+# Naked Image with Caption {.columns}
 
 ## Image with caption {.left}
 
 ![Alt text as caption](include/06-metal.png)
 
-------------------------------------------------------------------------
+# Source code {.small}
+````markdown
+![Alt text as caption](include/06-metal.png)
+````
+--------------------------------------------------------------------------------
 
-# Naked Images {.columns}
+# Caption as Extra Line {.columns}
 
 ## Image with caption {.left}
 
@@ -46,13 +59,26 @@ Strangely, this does not work.
 
 Caption: Caption on an extra line.
 
-------------------------------------------------------------------------
+# Source code {.small}
+````markdown
+![](include/06-metal.png)
+
+Caption: Caption on an extra line.
+````
+--------------------------------------------------------------------------------
 
 # Naked Image Pair {.columns}
 
-## Two mages with caption {.left}
+## Two images with caption {.left}
 
-hallo ![Caption 1](include/06-metal.png){width="45%"} holla ![Caption
-2](include/06-metal.png){width="45%"}
+hallo ![Caption 1](include/06-metal.png){width="45%"} holla ![Caption 2](include/06-metal.png){width="45%"}
 
 Just a line of text
+
+
+# Source code {.small}
+````markdown
+hallo ![Caption 1](include/06-metal.png){width="45%"} holla ![Caption 2](include/06-metal.png){width="45%"}
+
+Just a line of text
+````

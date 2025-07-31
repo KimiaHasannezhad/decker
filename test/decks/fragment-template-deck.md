@@ -29,16 +29,20 @@ experiments:
 2.  Project's dir `/templates` folder
 3.  Resource pack's `support/templates` folder
 
-#  {.columns}
+#   
 
-## Link Templates {.left}
+[all-params- arg0 arg1 arg2](url "title"){#theid .class1 .class2 attr1="attr1"
+attr2="attr2"} 
+
+# Source code {.x-small}
+## Link Templates
 
 ``` markdown
 [all-params- arg0 arg1 arg2](url "title"){#theid .class1 .class2 attr1="attr1"
 attr2="attr2"}
 ```
 
-## Macro `all-params-`
+## Macro `all-params-` 
 
 ``` html
 <ol>
@@ -59,13 +63,18 @@ attr2="attr2"}
 </ol>
 ```
 
-##  {.right}
-
-[all-params- arg0 arg1 arg2](url "title"){#theid .class1 .class2 attr1="attr1"
-attr2="attr2"}
+----------------------------------------------------------------------------------------------------
 
 #  {.columns}
 
+
+##  {.right}
+
+``` {#theid .all-params- .class1 .class2 attr1="attr1" attr2="attr2"}
+The Code.
+Probably many lines.
+```
+# Souce code
 ## Codeblock Templates {.left}
 
 ```` markdown
@@ -74,17 +83,12 @@ The Code.
 Probably many lines.
 ```
 ````
+----------------------------------------------------------------------------------------------------
 
-##  {.right}
-
-``` {#theid .all-params- .class1 .class2 attr1="attr1" attr2="attr2"}
-The Code.
-Probably many lines.
-```
 
 # Live Coding Macro
 
-## Code block
+## Source code
 
 ```` markdown
 ``` {.live-code- language="python"}
@@ -120,6 +124,10 @@ out.println(42);
 
 [§live-code-server](https://codapi.tramberend.de/v1)
 
+
+----------------------------------------------------------------------------------------------------
+
+
 # Grid Test {.columns}
 
 ## `canvas` {.left}
@@ -134,6 +142,22 @@ out.println(42);
 
 [§finegrid](500px)
 
+# Source code 
+```` markdown
+# Grid Test {.columns}
+
+## `canvas` {.left}
+
+[§canvas](500px)
+
+## `grid` {.center}
+
+[§grid](500px)
+
+## `finegrid` {.right}
+
+[§finegrid](500px)
+````
 --------------------------------------------------------------------------------
 
 # Meta Data in Fragment Template

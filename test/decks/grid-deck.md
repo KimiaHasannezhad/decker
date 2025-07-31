@@ -1,41 +1,51 @@
+
 ---
 title: Grid Layouts
+subtitle: Demonstrating how to define and apply layout templates on a slide grid
 ---
 
 # Some ideas on grid layout for slides
 
 ## This is not even a proposal
 
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 # Layout templates
 
 ## Principle
 
--   Rectangular named layout areas are positioned on a regular grid
+- Rectangular named layout areas are positioned on a regular grid
+- Grid size is determined automatically from the layout spec
+- Illegal layout templates generate an inline error
 
--   Grid size is determined automatically from the layout spec
-
--   Illegal layout templates generate an inline error
-
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 # Layout templates
 
-## Specification in Yaml
+## Specification in YAML
 
--   Layout templates can be specified in meta data
+- Layout templates can be specified in meta data
+- Example with 3 layout areas in 3 by 3 grid
 
--   Example with 3 layout areas in 3 by 3 grid
+``` {.yaml}
+layouts:
+  fancy:
+  - h h h h
+  - l b b b
+  - l b b b
+  short: "hhh|bbr|lff"
+```
 
-    ``` {.yaml}
-    layouts:
-      fancy:
-      - h h h h
-      - l b b b
-      - l b b b
-      short: "hhh|bbr|lff"
-    ```
+# Source code {.small}
+``` {.markdown}
+layouts:
+  fancy:
+  - h h h h
+  - l b b b
+  - l b b b
+  short: "hhh|bbr|lff"
+``` 
+--------------------------------------------------------------------------------
 
 # Slide with layout {layout="fancy"}
 
@@ -51,46 +61,84 @@ title: Grid Layouts
 
 - Some text hhhh
 
-
-
 ## This is also it
 
 - Shows up in the body cell too
 
------------------------------------------------------------------------
+# Source code {.small}
+
+``` {.markdown}
+# Slide with layout {layout="fancy"}
+
+## This is it {.b}
+
+- Some text bbbb
+
+## This is it {.l}
+
+- Some text llll
+
+## This is it {.h}
+
+- Some text hhhh
+
+## This is also it
+
+- Shows up in the body cell too
+```
+--------------------------------------------------------------------------------
 
 # Using layout templates
 
 ## Referenced
 
--   Boxes are assigned to layout areas by class or attribute
+- Boxes are assigned to layout areas by class or attribute
+- Example slide for the body area `b` of above layout
 
--   Example slide for the body area `b` of above layout
+# Slide with layout {layout="fancy"}
 
-    ``` {.markdown}
-    # Slide with layout {layout="fancy"}
+## This is it {.b}
 
-    ## This is it {.b}
+- Some text
 
-    - Some text
+## This is also it
 
-    ## This is also it
+- Shows up in the body cell too
 
-    - Shows up in the body cell too
-    ```
+# Source code {.small}
+``` {.markdown}
 
-------------------------------------------------------------------------
+# Slide with layout {layout="fancy"}
+
+## This is it {.b}
+
+- Some text
+
+## This is also it
+
+- Shows up in the body cell too
+```
+--------------------------------------------------------------------------------
 
 # Using layout templates
 
 ## Inline
 
--   Layout templates can be specified ad hoc in a slide attribute
+- Layout templates can be specified ad hoc in a slide attribute
 
-    ``` {.markdown}
-    # Slide with ad hoc layout {layout="hhh|bbr|lff"}
 
-    ## Block allocation is the same {.h}
+# Slide with ad hoc layout {layout="hhh|bbr|lff"}
 
-    - This is the header block
-    ```
+## Block allocation is the same {.h}
+
+- This is the header block
+
+
+# Source code {.small}
+``` {.markdown}
+# Slide with ad hoc layout {layout="hhh|bbr|lff"}
+
+## Block allocation is the same {.h}
+
+- This is the header block
+```

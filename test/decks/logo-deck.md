@@ -1,12 +1,23 @@
 ---
 title: Logo Test Deck
-subtitle: Fillertext
-author: John Doe
-affiliation: Ministry of Silly Walks
+subtitle:  Logo Test Deck
 
 logos:
   - '/test/decks/assets/picard-facepalm.jpeg'
   - '/test/decks/assets/title-logo-hci.png'
 ---
 
-# Intentionally left blank
+# Add Logo as we have seen in first slide ( title slide)
+
+For adding Logo the configuration below is required at the top of your .md file: 
+
+````markdown
+---
+title: Logo Test Deck
+subtitle:  Logo Test Deck
+
+logos:
+  - '/test/decks/assets/picard-facepalm.jpeg'
+  - '/test/decks/assets/title-logo-hci.png'
+---
+````

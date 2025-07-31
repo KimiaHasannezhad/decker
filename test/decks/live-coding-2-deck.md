@@ -35,37 +35,38 @@ Languages (so far):
 -   [x] integrate [highlightjs](https://highlightjs.org/) for syntax
     highlighting
 
-# Python {.columns}
+# Python 
 
-## Live {.left}
+## Live 
 
 ``` {.python .live-code- language="Python"}
 msg = "Hello, World!"
 print(msg)
 ```
 
-## Markdown {.right}
+# source code 
 
 ```` markdown
-``` {.live-code- language="python"}
+``` {.python .live-code- language="Python"}
 msg = "Hello, World!"
 print(msg)
 ```
 ````
 
-# Haskell {.columns}
+# Haskell 
 
-## Live {.left}
+## Live
 
 ``` {.live-code- language="Haskell" sandbox="GHCi" height="200px"}
 msg = "Hello, World!"
 print msg
 ```
 
-## Markdown {.right}
+# Source code 
 
 ```` markdown
-``` {.live-code- language="Haskell" sandbox="ghci"}
+``` {.live-code- language="Haskell" sandbox="GHCi"
+ height="200px"}
 msg = "Hello, World!"
 print msg
 ```

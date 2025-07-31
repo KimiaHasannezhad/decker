@@ -9,7 +9,7 @@ title: Code Hightlighing
 -   The Meta-Option `highlightjs` controls which code highlighting is used
     -   If not set, `pandoc` highlighting will be used.
     -   If `highlightjs: <style>` is specified, decker will disable `pandoc`
-        code highlighting and instead use `highlighjs`, with the CSS style file
+        code highlighting and instead use `highlightjs`, with the CSS style file
         `<style>.css`
 -   The following styles are supported:
     -   `atom-one-dark` and `atom-one-light`
@@ -18,6 +18,8 @@ title: Code Hightlighing
     -   `zenburn`
 
 # Haskell Code
+
+Souce code : 
 
 ``` haskell
 includeCode :: Pandoc -> Decker Pandoc
@@ -43,7 +45,7 @@ for (unsigned int y=0; y < camera.height; ++y)
 }
 ```
 
-# Paul Heckbert's Ray Tracer
+# Paul Heckbert's Ray Tracer {.x-small}
 
 ``` c
 typedef struct{double x,y,z}vec;vec U,black,amb={.02,.02,.02};struct sphere{

@@ -1,6 +1,7 @@
 ---
 lang: de
 title: Examiner Questions Import
+subtitle: This deck demonstrates different types of exam questions
 zoom: false
 ---
 
@@ -12,7 +13,7 @@ zoom: false
 2.  Free text (impossible to grade automatically)
 3.  Multiple answer selection
 
-## Multiple choice grading
+# Multiple choice grading
 
 ## {#section .left}
 
@@ -31,23 +32,60 @@ where
 -   $w$ is incorrectly checked boxes
 -   $n$ is correct choices available
 
---------------------------------------------------------------------------------
+# Souce code {.small}
+` markdown
+# Multiple choice grading
 
-![](./data/homogenous-coordinates-quest.yaml){.question .poll}
+## {#section .left}
 
---------------------------------------------------------------------------------
+The number of points $p$ is
 
-![](./data/homogenous-coordinates-quest.yaml){.question}
+$$
+p=\frac{(c-w)^+}{n}t
+$$
 
---------------------------------------------------------------------------------
+## {#section-1 .right}
 
-![](./data/replacement-transform-1-quest.yaml){.question .poll}
+where
 
---------------------------------------------------------------------------------
-
-![](./data/composite-pattern-2-quest.yaml){.question}
+-   $t$ is maximum points possible
+-   $c$ is correctly checked boxes
+-   $w$ is incorrectly checked boxes
+-   $n$ is correct choices available
 
 <!--
+--------------------------------------------------------------------------------
+
+![](./data/homogenous-coordinates-quest.yaml){ .poll}
+
+--------------------------------------------------------------------------------
+
+![](./data/homogenous-coordinates-quest.yaml){}
+
+# Source code {.small}
+` markdown
+![](./data/homogenous-coordinates-quest.yaml){.question}
+
+
+--------------------------------------------------------------------------------
+
+![](./data/replacement-transform-1-quest.yaml){ .poll}
+
+
+# Source code {.small}
+` markdown
+![](./data/replacement-transform-1-quest.yaml){.question .poll}
+
+
+--------------------------------------------------------------------------------
+![](./data/composite-pattern-2-quest.yaml){}
+
+# Source code {.small}
+` markdown
+![](./data/composite-pattern-2-quest.yaml){.question}
+
+
+
 --------------------------------------------------------------------------------
 
 ![](./data/texture-transformation-quest.yaml){.question}
@@ -55,4 +93,9 @@ where
 
 --------------------------------------------------------------------------------
 
-![](./data/many-many-quest.yaml){.question .poll}
+![](./data/many-many-quest.yaml){ .poll }
+
+# Source code {.small}
+` markdown
+![](./data/many-many-quest.yaml){ .poll }
+-->

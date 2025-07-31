@@ -70,16 +70,16 @@ Languages (so far):
 -   [x] integrate [CodeJar](https://medv.io/codejar/) for better editing
 -   [x] integrate [highlightjs](https://highlightjs.org/) for syntax highlighting
 
-# Python {.columns}
+# Python 
 
-## Live {.left}
+## Live 
 
 ``` {macro="live-code" language="python"}
 msg = "Hello, World!"
 print(msg)
 ```
 
-## Markdown {.right}
+# Source code
 
 ````markdown
 ``` {macro="live-code" language="python"}
@@ -88,9 +88,9 @@ print(msg)
 ```
 ````
 
-# Rust {.columns}
+# Rust 
 
-## Live {.left}
+## Live 
 
 ``` {macro="live-code" language="rust"}
 fn main() {
@@ -98,7 +98,7 @@ fn main() {
 }
 ```
 
-## Markdown {.right}
+# Source code
 
 ````markdown
 ``` {macro="live-code" language="rust"}
@@ -108,16 +108,15 @@ fn main() {
 ```
 ````
 
-# Haskell {.columns}
+# Haskell 
 
-## Live {.left}
+## Live 
 
 ``` {macro="live-code" language="haskell"}
 main = putStrLn "Hello, World!"
 ```
 
-## Markdown {.right}
-
+# source code
 ````markdown
 ``` {macro="live-code" language="haskell"}
 main = putStrLn "Hello, World!"
@@ -127,9 +126,9 @@ main = putStrLn "Hello, World!"
 `language="haskell"` expects a complete Haskell program with a 
 proper `main` function.
 
-# Haskell {.columns}
+# Haskell 
 
-## Live {.left}
+## Live
 
 ``` {macro="live-code" language="haskell" sandbox="ghci"}
 let a = 1
@@ -137,10 +136,10 @@ let b = 2
 a + b
 ```
 
-## Markdown {.right}
+# Source code
 
 ````markdown
-``` {macro="live-code" sandbox="ghci" language="haskell"}
+``` {macro="live-code" language="haskell" sandbox="ghci"}
 let a = 1
 let b = 2
 a + b
@@ -151,9 +150,9 @@ a + b
 GHCi instead of a complete Haskell program.
 
 
-# Java {.columns}
+# Java 
 
-## Live {.left}
+## Live 
 
 ``` {macro="live-code" language="java"}
 record FortyTwo(int value) {}
@@ -161,7 +160,7 @@ var ft = new FortyTwo(42);
 System.out.println(ft);
 ```
 
-## Markdown {.right}
+# Source code
 
 ````markdown
 ``` {macro="live-code" language="java"}
@@ -174,15 +173,15 @@ System.out.println(ft);
 `language="java"` expects a Java snippet which is fed to
 `jshell`. Also, `jshell` needs a lot of memory and is dog slow.
 
-# JavaScript {.columns}
+# JavaScript 
 
-## Live {.left}
+## Live 
 
 ``` {macro="live-code" language="javascript" engine="browser"}
 console.log("42")
 ```
 
-## Markdown {.right}
+# Source code
 
 ````markdown
 ``` {macro="live-code" language="javascript" engine="browser"}
@@ -198,12 +197,6 @@ console.log("42")
 
 A simple template is used around the code.
 
-## The code {.left}
-
-``` {macro="live-code" language="haskell" template="../static/live-code-template.hs.txt"}
-print (mario <> mario <> mario)
-```
-
 ## The template {.right}
 
 ```haskell
@@ -216,6 +209,13 @@ main = do
   
   print "the template added this"
 ```
+
+# Source code
+````markdown
+``` {macro="live-code" language="haskell" template="../static/live-code-template.hs.txt"}
+print (mario <> mario <> mario)
+````
+
 
 # Two Dependent Haskell Cells {.columns}
 
@@ -238,6 +238,30 @@ c = 3
 a + b + c
 ```
 
+# Source code {.x-small}
+````markdown
+# Two Dependent Haskell Cells {.columns}
+
+## {.left}
+
+The next cell depends on this code
+
+``` {#lcm-cell-1 macro="live-code" language="haskell" sandbox="ghci"}
+a = 1
+b = 2
+a + b
+```
+
+## {.right}
+
+This depends on the previous cell
+
+``` {#lcm-cell-2 macro="live-code" language="haskell" sandbox="ghci" depends-on="lcm-cell-1"}
+c = 3
+a + b + c
+```
+````
+
 # Two Dependent Python Cells {.columns}
 
 ## Independent cell {.left}
@@ -252,7 +276,25 @@ print("Hello, World 0!")
 print("Hello, World 1!")
 ```
 
-# Plot SVG
+# Source code {.small}
+````markdown
+# Two Dependent Python Cells {.columns}
+
+## Independent cell {.left}
+
+``` {#py-cell-1 macro="live-code" language="python"}
+print("Hello, World 0!")
+```
+
+## Depends on left cell{.right}
+ 
+``` {macro="live-code" language="python" depends-on="py-cell-1"}
+print("Hello, World 1!")
+```
+````
+
+
+# Plot SVG {.x-small}
 
 ``` {macro="live-code" language="python" output-mode="svg"}
 import io
@@ -274,3 +316,26 @@ print(stream.getvalue())
 ```
 
 [@live-code-server](https://codapi.tramberend.de/v1)
+
+# Source code {.small}
+
+````markdown
+``` {macro="live-code" language="python" output-mode="svg"}
+import io
+import numpy as np
+import matplotlib.pyplot as plt
+
+data = {"a": np.arange(50), "c": np.random.randint(0, 50, 50), "d": np.random.randn(50)}
+data["b"] = data["a"] + 10 * np.random.randn(50)
+data["d"] = np.abs(data["d"]) * 100
+
+plt.scatter("a", "b", c="c", s="d", data=data)
+plt.xlabel("entry a")
+plt.ylabel("entry b")
+plt.show()
+
+stream = io.StringIO()
+plt.savefig(stream, format="svg")
+print(stream.getvalue())
+```
+````
