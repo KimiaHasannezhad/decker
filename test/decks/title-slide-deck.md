@@ -1,101 +1,121 @@
 ---
-title: 'Title Slide Test Deck'
-subtitle: 'Testing the Template'
-
-# author: # 'John Doe'
-#  name: 'John Doe'
-#  url: 'https://example.com/john-doe'
-#   affiliation: 'Author Affiliation'
-#   name: 'Author Affiliation'
-#   url: 'https://example.com/doe-corp'
-#   logo: '/test/decks/assets/dummy-square.png'
-
-affiliation: # 'Deck Affiliation'
-  name: 'Deck Affiliation'
-  url: 'https://example.com/deck-affiliation'
-  logo: '/test/decks/assets/dummy-square.png'
-#    uri: '/test/decks/assets/dummy-square.png'
-#    width: '128px'
-#    height: '128px'
-
-copyright: # 'Test Copyright'
-  type: '(c)'
-  url: 'https://example.com/copyright'
-
+title: Title Slide Test Deck
+subtitle: Testing the Template
 authors:
-  - name: 'First Author'
-    url: 'https://example.com/first'
-    affiliation: # 'First Department'
-      name: 'First Department'
-      url: 'https://example.com/first-dep'
-      logo: '/test/decks/assets/dummy-long.png'
-  - name: 'Second Author'
-    url: 'https://example.com/second'
-    affiliation: 'Second Department'
-  - 'Third Author'
-
-date: '01.01.1990'
-
-# teaser: # 'assets/dummy-square.png'
-#   width: '128px'
-#   height: '128px'
-#   uri: 'assets/dummy-square.png'
-
+  - name: First Author
+    url: https://example.com/first
+    affiliation:
+      name: First Department
+      url: https://example.com/first-dep
+      logo: /test/decks/assets/dummy-long.png
+  - name: Second Author
+    url: https://example.com/second
+    affiliation: Second Department
+  - Third Author
+affiliation:
+  name: Deck Affiliation
+  url: https://example.com/deck-affiliation
+  logo: /test/decks/assets/dummy-square.png
+copyright:
+  type: (c)
+  url: https://example.com/copyright
+date: 01.01.1990
 logos:
-    - '/test/decks/assets/dummy-square.png' # should be "normal"
-    - '/test/decks/assets/dummy-long.png' # should be "normal"
-    - '/test/decks/assets/dummy-high.png' # should be scaled down
-    - '/test/decks/assets/dummy-big.png' # should be the same as square because it was scaled down
-    - uri: '/test/decks/assets/dummy-square.png' # should be "tiny"
-      width: 16px
-      height: 16px
-
+  - /test/decks/assets/dummy-square.png
+  - /test/decks/assets/dummy-long.png
+  - /test/decks/assets/dummy-high.png
+  - /test/decks/assets/dummy-big.png
+  - uri: /test/decks/assets/dummy-square.png
+    width: 16px
+    height: 16px
 showDeckerLink: false
-# includeTULogo: false
 ---
 
-# Title Meta
+# Introduction
 
-- `title`: [:meta](title)
-- `subtitle`: [:meta](subtitle)
+This deck tests and displays metadata elements like title, subtitle, authors, affiliations, copyright, date, and logos in a presentation using meta tags.
 
-# Author Meta
+# Title and Subtitle
 
-- `author`: [:meta](author)
-- `author.name`: [:meta](author.name)
-- `author.url`: [:meta](author.url)
-- `author.affiliation`: [:meta](author.affiliation)
-- `author.affiliation.name`: [:meta](author.affiliation.name)
-- `author.affiliation.url`: [:meta](author.affiliation.url)
-- `author.affiliation.logo`: [:meta](author.affiliation.logo)
-- `author.affiliation.logo.uri`: [:meta](author.affiliation.logo.uri)
-- `author.affiliation.logo.width`: [:meta](author.affiliation.logo.width)
-- `author.affiliation.logo.height`: [:meta](author.affiliation.logo.height)
+- Title: [:meta](title)
+- Subtitle: [:meta](subtitle)
 
-# Affiliation Meta
+# Authors
 
-- `affiliation`: [:meta](affiliation)
-- `affiliation.name`: [:meta](affiliation.name)
-- `affiliation.url`: [:meta](affiliation.url)
-- `affiliation.logo`: [:meta](affiliation.logo)
-- `affiliation.logo.uri`: [:meta](affiliation.logo.uri)
-- `affiliation.logo.width`: [:meta](affiliation.logo.width)
-- `affiliation.logo.height`: [:meta](affiliation.logo.height)
+- Authors: [:meta](authors)
 
-# Copyright Meta
+# Author Details
 
-- `copyright`: [:meta](copyright)
-- `copyright.type`: [:meta](copyright.type)
-- `copyright.url`: [:meta](copyright.url)
+- Author: [:meta](author)
+- Author Name: [:meta](author.name)
+- Author URL: [:meta](author.url)
+- Author Affiliation: [:meta](author.affiliation)
+- Author Affiliation Name: [:meta](author.affiliation.name)
+- Author Affiliation URL: [:meta](author.affiliation.url)
+- Author Affiliation Logo: [:meta](author.affiliation.logo)
+- Author Affiliation Logo URI: [:meta](author.affiliation.logo.uri)
+- Author Affiliation Logo Width: [:meta](author.affiliation.logo.width)
+- Author Affiliation Logo Height: [:meta](author.affiliation.logo.height)
 
-# Authors Meta
+# Affiliation Details
 
-- `authors`: [:meta](authors)
+- Affiliation: [:meta](affiliation)
+- Affiliation Name: [:meta](affiliation.name)
+- Affiliation URL: [:meta](affiliation.url)
+- Affiliation Logo: [:meta](affiliation.logo)
+- Affiliation Logo URI: [:meta](affiliation.logo.uri)
+- Affiliation Logo Width: [:meta](affiliation.logo.width)
+- Affiliation Logo Height: [:meta](affiliation.logo.height)
 
-# Date meta
+# Copyright
 
-- `date`: [:meta](date)
+- Copyright: [:meta](copyright)
+- Copyright Type: [:meta](copyright.type)
+- Copyright URL: [:meta](copyright.url)
 
-# Logo meta
+# Date
 
-- `logos`: [:meta](logos)
+- Date: [:meta](date)
+
+# Logos
+
+- Logos: [:meta](logos)
+
+# Source code {.xx-small}
+
+## Deck configuration : 
+
+```markdown
+---
+title: Title Slide Test Deck
+subtitle: Testing the Template
+authors:
+  - name: First Author
+    url: https://example.com/first
+    affiliation:
+      name: First Department
+      url: https://example.com/first-dep
+      logo: /test/decks/assets/dummy-long.png
+  - name: Second Author
+    url: https://example.com/second
+    affiliation: Second Department
+  - Third Author
+affiliation:
+  name: Deck Affiliation
+  url: https://example.com/deck-affiliation
+  logo: /test/decks/assets/dummy-square.png
+copyright:
+  type: (c)
+  url: https://example.com/copyright
+date: 01.01.1990
+logos:
+  - /test/decks/assets/dummy-square.png
+  - /test/decks/assets/dummy-long.png
+  - /test/decks/assets/dummy-high.png
+  - /test/decks/assets/dummy-big.png
+  - uri: /test/decks/assets/dummy-square.png
+    width: 16px
+    height: 16px
+showDeckerLink: false
+---
+```

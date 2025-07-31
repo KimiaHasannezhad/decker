@@ -1,34 +1,73 @@
 ---
-title: Vertical Slides
+title: Slide Navigation Demo
+subtitle: Exploring Vertical and Horizontal Slide Transitions
 vertical-slides: true
 ---
 
-# First slide
+# Introduction to AI
 
-1
+Overview of artificial intelligence concepts and applications.
 
-# Slide below {.sub}
+# AI History {.sub}
 
-2
+Key milestones in the development of AI technologies.
 
-# Even more below {.sub}
+# AI Applications {.sub}
 
-3
+Real-world use cases, including healthcare, finance, and automation.
 
-# infinite layers {.sub}
+# AI Ethics {.sub}
 
-4
+Considerations for responsible AI development and deployment.
 
-# To the side
+# Machine Learning Basics
 
-test
+Introduction to machine learning models and techniques.
 
-# Below again {.sub}
+# Supervised Learning {.sub}
 
-5
+Concepts of labeled data and predictive modeling.
 
-# Last one {.sub}
+# Unsupervised Learning {.sub}
 
-6
+Techniques for clustering and pattern discovery.
 
-# last one really
+# Conclusion
+
+Summary of AI's impact and future directions.
+
+
+# Source code {.xx-small}
+```markdown
+# Introduction to AI
+
+Overview of artificial intelligence concepts and applications.
+
+# AI History {.sub}
+
+Key milestones in the development of AI technologies.
+
+# AI Applications {.sub}
+
+Real-world use cases, including healthcare, finance, and automation.
+
+# AI Ethics {.sub}
+
+Considerations for responsible AI development and deployment.
+
+# Machine Learning Basics
+
+Introduction to machine learning models and techniques.
+
+# Supervised Learning {.sub}
+
+Concepts of labeled data and predictive modeling.
+
+# Unsupervised Learning {.sub}
+
+Techniques for clustering and pattern discovery.
+
+# Conclusion
+
+Summary of AI's impact and future directions.
+```

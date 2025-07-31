@@ -15,32 +15,56 @@ thebelab:
   repoProvider: github
 ---
 
-# ThebeLab Binder Deck
+# Introduction to ThebeLab and Binder
 
-## ThebeLab
+ThebeLab enables interactive Jupyter code execution in presentations, using a Haskell kernel hosted on Binder.
 
-A Javascript client library for Jupyter servers that uses the Jupyter
-API
+# ThebeLab Overview
 
--   [minrk/thebelab](https://github.com/minrk/thebelab)
--   [ThebeLab - ThebeLab
-    documentation](https://thebelab.readthedocs.io/en/latest/)
+ThebeLab is a JavaScript client library that connects to Jupyter servers via the Jupyter API.
 
-## Binder
+- [minrk/thebelab](https://github.com/minrk/thebelab)
+- [ThebeLab Documentation](https://thebelab.readthedocs.io/en/latest/)
 
-ThebeLab uses Binder to run the Jupyter server with the IHaskell kernel
-from a custom Docker image on GitHub.
+# Binder Overview
 
--   [The Binder Project](https://mybinder.org)
--   [gibiansky/IHaskell](https://github.com/gibiansky/IHaskell)
--   [monofon/plc-notebooks](https://github.com/monofon/plc-notebooks)
+Binder hosts Jupyter servers with a custom IHaskell kernel from a GitHub repository.
 
-# A ThebeLab Code Block {.columns}
+- [The Binder Project](https://mybinder.org)
+- [gibiansky/IHaskell](https://github.com/gibiansky/IHaskell)
+- [monofon/plc-notebooks](https://github.com/monofon/plc-notebooks)
 
-##  {.left grow="2"}
+# Configuration {.x-small}
+
+this deck's Connfigurations :
+
+```markdown
+---
+title: ThebeLab Test
+subtitle: Haskell Kernel
+width: 960.0
+height: 500.0
+margin: 0.0
+maxScale: 1.0
+minScale: 1.0
+thebelab:
+  enable: true
+  binderUrl: 'https://mybinder.org'
+  language: haskell
+  repo: 'monofon/plc-notebooks'
+  ref: master
+  repoProvider: github
+---
+
+```
+
+# Interactive Haskell Code Block {.columns}
+
+## Code {.left grow="2"}
 
 ``` {.haskell data-executable="true" data-language="haskell"}
-print "Was Gauss konnte, kann Haskell auch"
+print "Was Gauss konnte, 
+kann Haskell auch"
 
 sumtorial :: Integer -> Integer
 sumtorial 0 = 0
@@ -49,9 +73,9 @@ sumtorial n = n + sumtorial (n-1)
 sumtorial 100
 ```
 
-## Usage {.right}
+## Usage Instructions {.right}
 
-1.  Click \[run\]
-2.  Be patient!
-3.  Edit code
-4.  Rinse, repeat
+1. Click \[run\]
+2. Be patient!
+3. Edit code
+4. Rinse, repeat

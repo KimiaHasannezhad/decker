@@ -1,117 +1,237 @@
 ---
 reveal:
   center: false
-title: Spacing and margins
+title: Spacing and Margins
 highlightjs: false
 highlight-style: pygments
 ---
 
-#  {.columns}
+# Introduction to Layout {.columns}
 
-##  {.left}
+## Text Only {.left}
 
 Empty header.
 
-Empty everything.
+Just a few lines of text.
 
-Just some lines of text.
+## Image Only {.right}
 
-##  {.right}
+![Image](include/06-metal.png)
 
-![Just an image](include/06-metal.png)
+# Surce code {.x-small}
+```markdown
+# Introduction to Layout {.columns}
 
-# Paragraphs
+## Text Only {.left}
+
+Empty header.
+
+Just a few lines of text.
+
+## Image Only {.right}
+
+![Image](include/06-metal.png)
+``` 
+
+# Paragraph Spacing
+
+## Short and Long Paragraphs
 
 A short one-line paragraph.
 
-A longer paragraph that `contains a *lot more* words`{.markdown} than the short one-line
-paragraph.
+A longer paragraph that `contains a *lot more* words`{.markdown} than the short one-line paragraph.
 
 A short one-line paragraph.
 
-A longer paragraph that contains a lot more words than the short one-line
-paragraph. A longer paragraph that contains a lot more words than the short
-one-line paragraph. A longer paragraph that contains a lot more words than the
-short one-line paragraph.
+A longer paragraph that contains significantly more words than the short one-line paragraph, demonstrating extended text wrapping and spacing.
 
-# Lists {.columns}
+# Source code {.x-small}
+```markdown
+# Paragraph Spacing
 
-## Solo {.left}
+## Short and Long Paragraphs
 
--   Line one is very short.
--   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+A short one-line paragraph.
 
-## Framed {.right}
+A longer paragraph that `contains a *lot more* words`{.markdown} than the short one-line paragraph.
 
-The same list, but with some text before it
+A short one-line paragraph.
 
--   Line one is very short.
--   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+A longer paragraph that contains significantly more words than the short one-line paragraph, demonstrating extended text wrapping and spacing.
 
-And some text after it.
+```
 
-# Indented lists {.columns}
+# List Formatting {.columns}
 
-## Solo {.left}
+## Standalone List {.left}
 
--   Line one is very short.
-    -   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+- Line one is very short.
+- Line two is not much longer.
+- Line three is long enough to wrap.
 
-## Framed {.right}
+## Framed List {.right}
 
-The same list, but with some text before it
+Text before the list.
 
--   Line one is very short.
-    -   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+- Line one is very short.
+- Line two is not much longer.
+- Line three is long enough to wrap.
 
-And some text after it.
+Text after the list.
 
-# Paragraph + image {.columns}
+# Source code {.x-small}
+```markdown
+# List Formatting {.columns}
 
-## Not tagged {.left}
+## Standalone List {.left}
+
+- Line one is very short.
+- Line two is not much longer.
+- Line three is long enough to wrap.
+
+## Framed List {.right}
+
+Text before the list.
+
+- Line one is very short.
+- Line two is not much longer.
+- Line three is long enough to wrap.
+
+Text after the list.
+```
+
+# Indented List Formatting {.columns}
+
+## Standalone Indented List {.left}
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+## Framed Indented List {.right}
+
+Text before the indented list.
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+Text after the indented list.
+
+# Source code {.x-small}
+```markdown
+# Indented List Formatting {.columns}
+
+## Standalone Indented List {.left}
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+## Framed Indented List {.right}
+
+Text before the indented list.
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+Text after the indented list.
+```
+
+# Paragraph and Image Layout {.columns}
+
+## Untagged Content {.left}
 
 A short one-line paragraph.
 
 ![$e=mc^2$](include/06-metal.png)
 
-A longer paragraph that contains a lot more words than the short one-line
-paragraph.
+A longer paragraph that contains significantly more words than the short one-line paragraph.
 
-## Tagged {.right .success}
+## Tagged Content {.right .success}
 
 A short one-line paragraph.
 
 ![$e=mc^2$](include/06-metal.png)
 
-A longer paragraph that contains a lot more words than the short one-line
-paragraph.
+A longer paragraph that contains significantly more words than the short one-line paragraph.
 
-# Two blocks in a column
+# Source code {.x-small}
+```markdown
+# Paragraph and Image Layout {.columns}
 
-## Looking good
+## Untagged Content {.left}
 
--   Line one is very short.
-    -   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+A short one-line paragraph.
 
-## Not so much
+![$e=mc^2$](include/06-metal.png)
 
--   Line one is very short.
-    -   Line two is not much longer.
--   Line three is so long that it certainly wraps.
+A longer paragraph that contains significantly more words than the short one-line paragraph.
 
-# Tagged blocks
+## Tagged Content {.right .success}
 
-## Name change! {.warning}
+A short one-line paragraph.
 
--   They are not called **~~boxes~~** anymore
--   The are called **blocks** now
--   You might want to `%s/\.box/\.block/g`
+![$e=mc^2$](include/06-metal.png)
 
-## Two tagged blocks in a row is tricky
+A longer paragraph that contains significantly more words than the short one-line paragraph.
+```
+
+# Multiple Blocks in a Column
+
+## First Block
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+## Second Block
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+# Source code {.x-small}
+```markdown
+# Multiple Blocks in a Column
+
+## First Block
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+
+## Second Block
+
+- Line one is very short.
+  - Line two is not much longer.
+- Line three is long enough to wrap.
+```
+
+# Tagged Blocks
+
+## Terminology Update {.warning}
+
+- No longer called **~~boxes~~**.
+- Now referred to as **blocks**.
+- Suggested update: `%s/\.box/\.block/g`.
+
+## Image Block
 
 ![$e=mc^2$](include/06-metal.png){width="40%"}
+
+# Source code {.x-small}
+```markdown
+# Tagged Blocks
+
+## Terminology Update {.warning}
+
+- No longer called **~~boxes~~**.
+- Now referred to as **blocks**.
+- Suggested update: `%s/\.box/\.block/g`.
+
+## Image Block
+
+![$e=mc^2$](include/06-metal.png){width="40%"}
+```

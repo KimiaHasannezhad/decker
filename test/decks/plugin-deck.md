@@ -3,8 +3,8 @@ pandoc:
   filters:
     before:
     - upcase-h1.lua
-subtitle: In Lua that is
 title: Plugins
+subtitle: Pandoc Lua filter (upcase-h1.lua) that converts all level-1 headers to uppercase automatically during document processing
 ---
 
 # A Lua Plugin {.columns}

@@ -7,6 +7,7 @@ short-links:
     binder: 'https://mybinder.org/v2/gh/monofon/plc-java/master?filepath=@@@'
     local: 'http://localhost:8192/@@?token=plc'
 title: Short Links
+subtitle: Demonstrating a URI scheme-based URL shortener with templating, interpolation, and variant binding for creating compact, dynamic links
 ---
 
 
@@ -25,7 +26,7 @@ title: Short Links
 
 # Short Links Example {.small}
 
-## YAML meta data
+## yaml meta data
 
 ``` {.yaml}
 short-links:
@@ -39,7 +40,7 @@ short-links:
 
 # Short Links Example {.small}
 
-## Use like this
+## Source code
 
 ``` {.markdown}
 1.  [](beuth:people/detail/964)
@@ -57,8 +58,17 @@ short-links:
 
 # Short Links Example
 
-## Does it?
+1.  [`beuth:people/detail/964`](beuth:people/detail/964)
+2.  [`notebook:some/path.thing`](notebook:some/path.thing)
+3.  [`notebook.binder:some/path.thing`](notebook.binder:some/path.thing)
+
+
+# Source code 
+```markdown
+# Short Links Example
 
 1.  [`beuth:people/detail/964`](beuth:people/detail/964)
 2.  [`notebook:some/path.thing`](notebook:some/path.thing)
 3.  [`notebook.binder:some/path.thing`](notebook.binder:some/path.thing)
+
+```

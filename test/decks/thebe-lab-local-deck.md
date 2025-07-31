@@ -18,9 +18,14 @@ thebelab:
 title: ThebeLab Test
 width: 960.0
 ---
-# ThebeLab Local Deck
 
-## Start a local Jupyter kernel
+# Introduction to ThebeLab Local
+
+This deck demonstrates ThebeLab's ability to run interactive Haskell code blocks locally using a Jupyter kernel in a presentation environment.
+
+# Starting a Local Jupyter Kernel
+
+## Command
 
 ``` {.make}
 jupyter notebook \
@@ -29,32 +34,40 @@ jupyter notebook \
   --NotebookApp.port=7777
 ```
 
-# A ThebeLab Code Block {.columns}
+This command starts a local Jupyter server with a Haskell kernel for ThebeLab integration.
 
-##  {.left grow="2"}
+# Interactive Haskell Code Block {.columns}
+
+## Code {.left grow="2"}
 
 ``` {.haskell data-executable="true"}
 print "Hallo!"
 ```
 
-## Usage {.right}
+## Usage Instructions {.right}
 
-1.  Edit code
-2.  Click \[run\]
-3.  Rinse, repeat
+1. Edit code
+2. Click \[run\]
+3. Rinse, repeat
 
-# Multiple cells
+# Multiple Code Cells: Addition Function
+
+## Definition
 
 ``` {.haskell data-executable="true"}
 add :: Num a => a -> a -> a
 add a b = a + b
 ```
 
+## Execution
+
 ``` {.haskell data-executable="true"}
 add 1 2
 ```
 
-# 
+# Multiple Code Cells: Subtraction Function
+
+## Definition
 
 ``` {.haskell data-executable="true"}
 sub :: Num a => a -> a -> a

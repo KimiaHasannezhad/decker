@@ -6,43 +6,89 @@ paths:
   non-existing-file-absolute: /test/decks/this/path/does/not.exist
   non-existing-file-relative: this/path/does/not.exist
 runtime-path-variables:
-- paths
+  - paths
 title: Path Resolution
+subtitle: Demonstrating file path resolution using relative and absolute paths for images and included Markdown files in a documentation system
 ---
 
-Document Path: [:meta](documentPath)
+# Path Resolution Documentation
 
-# Images
+**Document Path**: [:meta](documentPath)
 
-Plain image paths.
+This document explains how file paths are resolved, including examples of relative and absolute paths for images and included Markdown files.
 
-| ![include/06-metal.png](include/06-metal.png)
-| ![/test/decks/include/06-metal.png](/test/decks/include/06-metal.png)
+# Image Path Examples
 
-# Meta Data Values
+The following table demonstrates how to include images using relative and absolute paths.
 
-## Definitions
+| Relative Path Image | Absolute Path Image |
+|---------------------|---------------------|
+| ![Relative Image](include/06-metal.png) | ![/test/decks/include/06-metal.png](/test/decks/include/06-metal.png) |
 
-``` yaml
-paths:
-    existing-file-relative: include/06-metal.png
-    existing-file-absolute: /test/decks/include/06-metal.png
-    non-existing-file-relative: this/path/does/not.exist
-    non-existing-file-absolute: /test/decks/this/path/does/not.exist
+# Source code {.small}
+```markdown
+# Path Resolution Documentation
+
+**Document Path**: [:meta](documentPath)
+
+This document explains how file paths are resolved, including examples of relative and absolute paths for images and included Markdown files.
+
+# Image Path Examples
+
+The following table demonstrates how to include images using relative and absolute paths.
+
+| Relative Path Image | Absolute Path Image |
+|---------------------|---------------------|
+| ![Relative Image](include/06-metal.png) | !
+[/test/decks/include/06-metal.png](/test/decks/include/06-metal.png) |
 ```
 
-## Resolved Values
+# Path Definitions in Metadata
 
--   existing-file-relative: [:meta](paths.existing-file-relative)
--   existing-file-absolute: [:meta](paths.existing-file-absolute)
--   non-existing-file-relative: [:meta](paths.non-existing-file-relative)
--   non-existing-file-absolute: [:meta](paths.non-existing-file-absolute)
+# YAML Metadata {.small}
 
---------------------------------------------------------------------------------
+The paths are defined in the YAML metadata as follows:
 
-# Included Markdown
+```yaml
+paths:
+  existing-file-relative: include/06-metal.png
+  existing-file-absolute: /test/decks/include/06-metal.png
+  non-existing-file-relative: this/path/does/not.exist
+  non-existing-file-absolute: /test/decks/this/path/does/not.exist
+```
 
-Plain image path in an included Markdown file.
+# Resolved Path Values 
+
+The resolved values for the defined paths are:
+
+- **Existing File (Relative)**: [:meta](paths.existing-file-relative)
+- **Existing File (Absolute)**: [:meta](paths.existing-file-absolute)
+- **Non-existing File (Relative)**: [:meta](paths.non-existing-file-relative)
+- **Non-existing File (Absolute)**: [:meta](paths.non-existing-file-absolute)
+
+# Source code 
+```markdown
+# Resolved Path Values
+
+The resolved values for the defined paths are:
+
+- **Existing File (Relative)**: [:meta](paths.existing-file-relative)
+- **Existing File (Absolute)**: [:meta](paths.existing-file-absolute)
+- **Non-existing File (Relative)**: [:meta](paths.non-existing-file-relative)
+- **Non-existing File (Absolute)**: [:meta](paths.non-existing-file-absolute)
+```
+
+# Included Markdown File {.xx-small}
+
+This section includes a Markdown file to show how plain image paths are handled in external files:
 
 [:include](include/path-resolution-include.md)
 
+# Source code 
+```markdown
+# Included Markdown File {.xx-small}
+
+This section includes a Markdown file to show how plain image paths are handled in external files:
+
+[:include](include/path-resolution-include.md)
+```

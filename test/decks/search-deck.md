@@ -1,11 +1,11 @@
 ---
-subtitle: Here be search widgets
+subtitle: Integration of a JavaScript-based fuzzy search widget
 title: Search
 ---
 
 # Score 0.5
 
-``` {.javascript .run}
+```{.javascript .run}
 import("./" + Decker.meta.supportPath + "/fuzzySearch/search.js")
     .then(module => module.default(anchor, 0.5));
 ```

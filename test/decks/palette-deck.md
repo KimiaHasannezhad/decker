@@ -102,6 +102,44 @@ $e=mc^2$
 -   Some text or other
 -   $e=mc^2$
 
+
+# Source code {.xx-small}
+```markdown
+# Blocks {.columns}
+
+## Primary {.accent0 .left}
+
+-   Some text or other
+-   $e=mc^2$
+
+## Secondary {.accent1}
+
+-   Some text or other
+-   $e=mc^2$
+
+## Success {.accent2}
+
+-   Some text or other
+-   $e=mc^2$
+
+## Danger {.accent3 .right}
+
+-   Some text or other
+-   $e=mc^2$
+
+## Warning {.accent4 align="center"}
+
+Some text or other
+
+$e=mc^2$
+
+## Info {.accent5 .incremental}
+
+-   Some text or other
+-   $e=mc^2$
+
+
+```
 --------------------------------------------------------------------------------
 
 # Typography {.columns}
@@ -126,6 +164,32 @@ $$ {e=mc^2} $$
 ## Surely, you are joking {.accent6 .fragment align="center"}
 
 [**Mr. Feynman**]{.accent7}
+
+# Source code {.x-small}
+```markdown
+# Typography {.columns}
+
+## Links {.left}
+
+-   This is a [**link**](https://www.heise.de)
+-   This is *importantg*
+-   This is **more important**
+-   This is [**critically important**]{.accent1}
+-   This is *successful*
+-   This is **more successful**
+-   This is [**critically successful**]{.accent3}
+-   `Show me some code`, baby
+
+## Math {.right .accent5 align="right"}
+
+Math blocks are always right!
+
+$$ {e=mc^2} $$
+
+## Surely, you are joking {.accent6 .fragment align="center"}
+
+[**Mr. Feynman**]{.accent7}
+```
 
 --------------------------------------------------------------------------------
 

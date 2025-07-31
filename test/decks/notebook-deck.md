@@ -17,7 +17,7 @@ write-notebook: true
 ---
 
 
-# Write deck to notebook {#write-deck-to-notebook .columns}
+# Write deck to notebook {#write-deck-to-notebook .columns .x-small}
 
 ## Decker metadata {#decker-metadata .left}
 
@@ -55,6 +55,20 @@ jupyter:
 
 -   Code blocks marked with `{.code}`
 
+# Source code {#source-code}
+
+``` markdown
+# In the notebook {#in-the-notebook .notebook}
+
+## Selected content {#selected-content}
+
+-   Only slides marked with `{.notebook}`
+
+## Code block as cells {#code-block-as-cells}
+
+-   Code blocks marked with `{.code}`
+```
+
 # A live code cell (Haskell) {#a-live-code-cell-haskell .notebook}
 
 This cell will be live in the notebook.
@@ -63,3 +77,16 @@ This cell will be live in the notebook.
 main = putStrLn "Hello World!"
 main
 ```
+
+# Source code {#source-code-1 .small}
+
+```` markdown
+# A live code cell (Haskell) {#a-live-code-cell-haskell .notebook}
+
+This cell will be live in the notebook.
+
+``` {.haskell .code}
+main = putStrLn "Hello World!"
+main
+```
+````
