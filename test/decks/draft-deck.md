@@ -23,7 +23,7 @@ slide should be missing
 
 # Missing {.solution}
 
-Kimia
+Missed 
 
 # Solution Boxes
 
@@ -40,4 +40,4 @@ should be missing
 
 ## Missing {.solution}
 
-Hnejad
+Text
