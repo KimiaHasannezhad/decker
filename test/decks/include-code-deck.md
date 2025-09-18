@@ -4,7 +4,7 @@ title: Include Code
 subtitle : show codes in slides
 ---
 
-# Embedd source code {.small}
+# Embeded source code {.small}
 
 
 ``` haskell
@@ -32,15 +32,16 @@ includeCode (Pandoc meta blocks) = do
 ![](/src/Text/Decker/Filter/Media.hs){.haskell .code width="100%" height="500px"}
 
 
-# Source code
+# Source code 
 
 ``` markdown
-![](/src/Text/Decker/Filter/Media.hs){.haskell .code width="100%" height="500px"}
+![](/src/Text/Decker/Filter/Media.hs){.haskell 
+.code width="100%" height="500px"}
 ```
 
 -------------------------------------------------------
 
-# Include a tagged snippet (Image syntax) {.small}
+# Include a tagged snippet (Image syntax) {.x-small}
 
 ![](/src/Text/Decker/Filter/Media.hs#include-even-shorter){.haskell .code 
 width="100%" height="500px"}
@@ -61,7 +62,7 @@ width="100%" height="500px"}
 
 ## The code of this slide
 
-![](./include-code-deck.md#recursive){.haskell .code}
+![](./include-code-deck.md){.haskell .code}
 
 <!-- ---8<--- -->
 

@@ -138,7 +138,7 @@ height="300px"}
 | Name   | Value |
 |--------|-------|
 | width  | 300px |
-| height |       |
+| height |  -    |
 | w:h    | 2/3   |
 
 ## Iframe {.right}
@@ -154,7 +154,7 @@ w:h="2/3"}
 | Name   | Value |
 |--------|-------|
 | width  | 300px |
-| height |       |
+| height |  -    |
 | w:h    | 2/3   |
 
 ## Iframe {.right}

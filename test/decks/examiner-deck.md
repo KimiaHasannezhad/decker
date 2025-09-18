@@ -67,6 +67,7 @@ where
 ![](./data/homogenous-coordinates-quest.yaml){.question}
 
 
+
 --------------------------------------------------------------------------------
 
 ![](./data/replacement-transform-1-quest.yaml){ .poll}
@@ -85,17 +86,25 @@ where
 ![](./data/composite-pattern-2-quest.yaml){.question}
 
 
-
 --------------------------------------------------------------------------------
 
 ![](./data/texture-transformation-quest.yaml){.question}
 -->
 
+# 
+![](./data/quest1.yaml){.question .poll}
+
 --------------------------------------------------------------------------------
 
+
+# 
+![](./data/quest2.yaml){.question .poll}
+
+--------------------------------------------------------------------------------
+<!-- 
 ![](./data/many-many-quest.yaml){ .poll }
 
 # Source code {.small}
 ` markdown
 ![](./data/many-many-quest.yaml){ .poll }
--->
+--> -->
